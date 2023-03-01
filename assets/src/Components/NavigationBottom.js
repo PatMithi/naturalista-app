@@ -10,9 +10,10 @@ function NavigationBottom() {
             space= '32' 
             w="full" 
             px={6} 
-            bg={Colors.whiteSolid} 
+            bg={Colors.white} 
             py={1} 
             pt={5}
+            borderColor={Colors.main}
             alignItems="center" 
             borderTopStyle='solid'
             borderTopColor={Colors.main}
