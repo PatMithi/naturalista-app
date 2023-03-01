@@ -6,11 +6,13 @@ import NumericInput from "react-native-numeric-input";
 import NavigationBottom from "../Components/NavigationBottom";
 import Buttone from "../Components/Buttone";
 import { useFonts } from "expo-font";
+import Review from "../Components/Review";
 
 function ProductDetails () {
     const [value, setValue] = useState(0);
     let [fontsLoaded] = useFonts({
-        'Montserrat': require('../../fonts/Montserrat-VariableFont_wght.ttf')
+        'Montserrat': require('../../fonts/Montserrat-Regular.ttf'),
+        'Montserrat-bold': require('../../fonts/Montserrat-Bold.ttf') 
     });
 
     
@@ -23,7 +25,7 @@ function ProductDetails () {
                     w='full' 
                     h='300' 
                     resizeMode="cover" />
-                <Heading px={3} pt={3} bold fontSize={22} mb={2} lineHeight={22} style={{fontFamily:'Montserrat'}}>Leave-in and Hydrating Bundle</Heading>
+                <Heading px={3} pt={3} bold fontSize={22} mb={2} lineHeight={22} style={{fontFamily:'Montserrat-bold'}}>Leave-in and Hydrating Bundle</Heading>
                 <Rating value={4} px={4} size={18}/>
                 <HStack space={2} alignItems='center' my={5} px={3}>
                     <NumericInput 
@@ -41,11 +43,11 @@ function ProductDetails () {
                         leftButtonBackgroundColor={Colors.main}
                     />
                     <Spacer />
-                    <Heading bold color={Colors.black} fontSize={20}>
+                    <Heading bold color={Colors.black} fontSize={20} fontFamily={'Montserrat'}>
                         £24
                     </Heading>
                 </HStack>
-                <Text lineHeight={24} fontSize={14}>
+                <Text lineHeight={24} fontSize={14} fontFamily='Montserrat' >
                 This is the perfect healthy hair combo for all those who 
                 are started their natural hair journey, those with damaged 
                 hair or for those looking for the best products to apply using 
@@ -75,11 +77,13 @@ function ProductDetails () {
                     _text={{
                         color: Colors.whiteSolid,
                         fontSize: '14',
-                        fontWeight: 'bold'
+                        fontWeight: 'bold',
+                        fontFamily: 'Montserrat'
                     }}
                     >
                     ADD TO CART
                 </Button>
+                <Review/>
             </ScrollView>
             <NavigationBottom/>
         </Box> 
