@@ -47,7 +47,7 @@ function ProductDetails () {
                         £24
                     </Heading>
                 </HStack>
-                <Text lineHeight={24} fontSize={14} fontFamily='Montserrat' px={4}>
+                <Text lineHeight={24} fontSize={14} fontFamily='Montserrat9' px={4}>
                 This is the perfect healthy hair combo for all those who 
                 are started their natural hair journey, those with damaged 
                 hair or for those looking for the best products to apply using 
@@ -68,7 +68,7 @@ function ProductDetails () {
                     _pressed={{
                         bg: Colors.main,
                     }}
-                    left='4%'
+                    mx='10'
                     justifyContent='center'
                     my={30}
                     w="80%"
