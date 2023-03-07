@@ -3,6 +3,8 @@ import { View, Text, Center, Heading } from "native-base";
 import Colors from "../color";
 import {FontAwesome} from '@expo/vector-icons';
 import Tabs from "../Components/Profile/Tabs";
+import { SceneMap } from "react-native-tab-view";
+
 
 function ProfileScreen () {
     return (
