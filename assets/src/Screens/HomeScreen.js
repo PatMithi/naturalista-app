@@ -6,6 +6,7 @@ import ProductsComponent from "../Components/ProductsComponent";
 import NavigationBottom from "../Components/NavigationBottom";
 import HomeBanner from "../Components/HomeBanner";
 import HomeMenu from "../Components/HomeMenu";
+import TipOfTheDay from "../Components/TipOfTheDay";
 
 function HomeScreen() {
     return (
@@ -13,6 +14,7 @@ function HomeScreen() {
             <SearchBar/> 
             <HomeBanner/>
             <HomeMenu/>
+            <TipOfTheDay/>
             <NavigationBottom />
         </Box>
     );

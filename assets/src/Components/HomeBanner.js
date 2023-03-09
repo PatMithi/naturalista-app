@@ -5,7 +5,7 @@ import Buttone from "./Buttone";
 
 function HomeBanner () {
     return (
-        <Box h={'1/3'} bg={Colors.main}>
+        <Box h={'1/3'} bg={Colors.whiteSolid}>
             <Image
                h={'full'}
                w='full'
@@ -16,7 +16,7 @@ function HomeBanner () {
             />
             <Box zIndex={2} bg={Colors.white} h={'1/2'} w='70%' mx={'15%'} my={'15%'} position='absolute'>
                 <VStack space={2} alignItems={'center'}>
-                    <Text mt={8} alignItems={'center'}>Brand New Formula to help increase hair growth!</Text>
+                    <Text mt={8} textAlign={'center'}>Brand New Formula to help increase hair growth!</Text>
                     <Button
                         bg={Colors.white}
                         borderColor={Colors.main}

@@ -40,7 +40,7 @@ const MenuOptions = [
 function HomeMenu () {
     return(
         <Box h='110px' mt={2}>
-            <ScrollView flex={1} horizontal={true} showsHorizontalScrollIndicator={false} h='15%' bg={Colors.whiteSolid} mx={4} w='full'>
+            <ScrollView flex={1} horizontal={true} showsHorizontalScrollIndicator={false} h='15%' bg={Colors.whiteSolid} mx={4} w='95%'>
                 <HStack flex={1} h='1/3' w='full' space={4}  >
                     {MenuOptions.map((i) =>(
                         <Center h={'110px'} rounded='full'>
