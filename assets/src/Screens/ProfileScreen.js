@@ -8,8 +8,8 @@ import { SceneMap } from "react-native-tab-view";
 
 function ProfileScreen () {
     return (
-        <View>
-            <Center bg={Colors.main} pt={10} pb={6} safeAreaTop h={'1/2'}>
+        <View h={'full'}>
+            <Center bg={Colors.main} pt={10} pb={6} safeAreaTop h={'1/4'}>
                 <FontAwesome name="user-circle-o" size={80} color={Colors.whiteSolid}/>
                 <Heading bold fontSize={15} isTruncated color={Colors.whiteSolid} mt={2}>Graham Scott</Heading>
             </Center>

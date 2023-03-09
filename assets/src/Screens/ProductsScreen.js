@@ -1,14 +1,18 @@
 import React from "react";
-import { View } from "react-native";
+import { View, Text, Box } from "native-base";
+import Colors from "../color";
+import SearchBar from "../Components/SearchBar";
+import ProductsComponent from "../Components/ProductsComponent";
+import NavigationBottom from "../Components/NavigationBottom";
 
-function ProductScreen () {
+function ProductsScreen() {
     return (
-        <View>
-            <Text>
-                ProductScreen
-            </Text>
-        </View>
-    )
-}
+        <Box flex={1} bg={Colors.whiteSolid }>
+            <SearchBar/> 
+            <ProductsComponent/>
+            <NavigationBottom />
+        </Box>
+    );
+} 
 
-export default ProductScreen;
+export default ProductsScreen;

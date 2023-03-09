@@ -1,13 +1,17 @@
 import React from "react";
-import { View } from "react-native-web";
+import { View, Text, Box } from "native-base";
+import MenuItem from "../Components/MenuIem";
+import NavigationBottom from "../Components/NavigationBottom";
+import SearchBar from "../Components/SearchBar";
 
 function MenuScreen () {
     return (
-        <View>
-            <Text>
-                MenuScreen
-            </Text>
-        </View>
+        <Box flex={1} >
+            <SearchBar />
+            <MenuItem/>
+            <NavigationBottom />
+        </Box>
+
     )
 }
 

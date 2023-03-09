@@ -4,12 +4,15 @@ import Colors from "../color";
 import SearchBar from "../Components/SearchBar";
 import ProductsComponent from "../Components/ProductsComponent";
 import NavigationBottom from "../Components/NavigationBottom";
+import HomeBanner from "../Components/HomeBanner";
+import HomeMenu from "../Components/HomeMenu";
 
 function HomeScreen() {
     return (
         <Box flex={1} bg={Colors.whiteSolid }>
             <SearchBar/> 
-            <ProductsComponent/>
+            <HomeBanner/>
+            <HomeMenu/>
             <NavigationBottom />
         </Box>
     );
